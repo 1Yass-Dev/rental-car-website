@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff9d00, #ff9d00);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #000000;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-top: 100px;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: #ffffff;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff9d00, #ff9d00);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  color: #ffffff;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ffffff;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #ff9d00;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+  color: goldenrod;
+ }
+ 
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+   color: #ffffff;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #ff9d00;
+   border-color: #ff9d00;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #000000;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, rgb(255, 251, 0), rgb(208, 255, 0));
+
+ }
+
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+header{
+    width: 100%;
+    height:10%;
+   background-color: #000000 ;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    z-index: 2;
+    
+    background-size: cover;
+    }
+    
+    .navbar{
+    height: 17%;
+    display: flex;
+    align-items: center;
+    
+    
+    
+    }
+    .tgo{margin-top: -550px;}
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    nav{
+    flex:1;
+    text-align: right;
+    transition: transform .2s;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    }
+    
+    .kk{
+        color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.10em;
+      
+      display: inline-block;
+      padding: 15px 20px;
+      position: relative;
+      transition: transform .2s;
+    }
+    .kk:hover{
+    
+        transform: scale(1.1);
+    }
+    
+    .kk::after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      border-radius: 50px 50px;
+    }
+    
+    .kk:hover::after{
+        width: 100%; 
+        left: 0; 
+    }
+    
+    
+    .hh{
+        color: #fff;
+        
+        text-decoration: none;
+        letter-spacing: 0.10em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        transition: transform .2s;
+    }
+    .hh:hover + .list-categories{
+        max-height: inherit;
+        opacity: 1;
+      }
+      .list-categories{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        max-height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 300ms ease;
+      }
+    .hh:hover{
+    
+        transform: scale(1.1);
+    }
+    .hh::after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+        border-radius: 50px 50px;
+    }
+    .hh:hover::after{
+        width: 100%; 
+        left: 0; 
+    }
+    .bb{
+        color: #fff;
+        
+        text-decoration: none;
+        letter-spacing: 0.10em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        transition: transform .2s;
+    }
+    
+    .bb:hover{
+    
+        transform: scale(1.1);
+    }
+    .bb::after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+        border-radius: 50px 50px;
+    }
+    .bb:hover::after{
+        width: 100%; 
+        left: 0; 
+    }
+    .dd{
+        color: #fff;
+        
+        text-decoration: none;
+        letter-spacing: 0.10em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        transition: transform .2s;
+    }
+    
+    .dd:hover{
+    
+        transform: scale(1.1);
+    }
+    .dd::after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      border-radius: 50px 50px;
+    }
+    .dd:hover::after{
+        width: 100%; 
+        left: 0; 
+    }
+
+    
+      body {
+        background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)) ,url("D:\\projet\\tsawr\\peter-broomfield-m3m-lnR90uM-unsplash.jpg");
+background-size: cover;
+      }
+      
+      svg {
+        font-family: 'Russo One', sans-serif;
+        position: absolute; 
+        width: 100%; height: 100%;
+        width: 150px; 
+        cursor: pointer;
+        margin-left: -80px;
+      }
+      svg text {
+        text-transform: uppercase;
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #f6ac4f;
+        font-size: 140px;
+        width: 150px; 
+        cursor: pointer;
+        margin-left: -80px;
+      }
+      @keyframes stroke {
+        0%   {
+          fill: rgba(111, 255, 0, 0.516); stroke: rgba(54,95,160,1);
+          stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        }
+        70%  {fill: rgba(138, 67, 20, 0); stroke: #f6ac4f; }
+        80%  {fill: rgba(111, 255, 0, 0.568); stroke: #f6ac4f; stroke-width: 3; }
+        100% {
+          fill: #f6ac4f; stroke: #f6ac4f; 
+          stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        }
+      }
+      .btnlogin{
+        width: 100px;
+        height:30px ;
+        font-family: initial;
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+        
+        transition: 0.3s;
+        }
+        .btnlogin:hover{
+        background-color: #000000;
+          color: rgb(255, 231, 231);
+          text-decoration: dotted;
+        
+        }
+        .btlogin{
+            width: 100px;
+            height:30px ;
+            font-family: initial;
+            color: rgb(0, 0, 0);
+            font-size: 17px;
+            opacity: 80%;
+            transition: 0.3s;
+            }
+            .btlogin:hover{
+            background-color: #000000;
+              color: rgb(115, 255, 0);
+              text-decoration: dotted;
+            
+            }                               
+            .mpo{
+                transition: 0.3s; }
+            .mpo:hover{
+    
+          color: rgb(245, 204, 0);
+          text-decoration: dotted;
+    
+            }
+    
+    
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              }
+              
+              .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                
+              }
+              
+              .button:hover span {
+                padding-right: 25px;
+                
+              }
+              
+              .button:hover span:after {
+                opacity: 1;
+                right: 0;
+                
+              }
+              .imo:hover{
+                color: #00ff26;
+                cursor: pointer;
+                
+              }
+              .imo{
+                font-family: initial;
+                color: rgb(0, 0, 0);
+                
+              } 
+              .fg:hover{
+                color: #ffc700;
+                
+              }
+              .fg{
+                font-family: initial;
+                color: rgb(0, 0, 0);
+                
+              }

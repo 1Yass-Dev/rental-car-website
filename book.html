@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nanum+Gothic'>
+    <link rel="stylesheet" href="book.css">
+    <header class="tgo">
+ 
+        <div class="navbar">
+            <svg viewBox="0 0 1320 300">
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                  Driveease
+                </text>
+            </svg>          
+          
+            <nav class="lk">
+     
+              <ul>
+                <li class="kk"><a  href="D:\projet\pp\projet.html">Home</a></li>
+                <li class="hh" ><a href="D:\projet\pp\kk.html">Vehicule Fleet</a></li>
+                <li class="bb"><a href="D:\projet\pp\contact.html">Contact</a></li>
+                <li class="dd"><a href="D:\projet\pp\about.html">About us</a></li>
+                <li><button class="btnlogin"> <a href="D:\projet\pp\login html.html"><span class="imo">Sign in </span></a> </button></li>
+ 
+                <li><button class="btlogin"><a href="D:\projet\pp\register.html"><span class="imo">Register</span></a></button></li>
+              </ul>
+              
+          </nav>
+        
+        
+    
+    </header>
+        </div>
+</head>
+<body>
+    <div class="ju">
+    <form class="booking-form" action="#" method="post">
+        <div class="elem-group">
+          <label for="name"><h4 class="toto">Your Name</h4></label>
+          <input type="text" id="name" name="visitor_name" placeholder="name" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email"><h4 class="yoyo">Your E-mail</h4></label>
+          <input type="email" id="email" name="visitor_email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone"><h4 class="bobo">Your Phone</h4></label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="+212-653752001" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        
+        <div class="elem-group inlined">
+          <label for="checkin-date"><h4 class="boboo">Check-in Date</h4></label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date"><h4 class="bobooo">Check-out Date</h4></label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection"><h4 class="totoo">Vehicule Make</h4> </label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">select car</option>
+              <option value="connecting">BMW</option>
+              <option value="adjoining">Mercedes</option>
+              <option value="adjacent">Bentley</option>
+              <option value="connecting">Alpha Romeo</option>
+              <option value="adjoining">Nissan</option>
+              <option value="adjacent">Rimac</option>
+              <option value="connecting">Range Rover</option>
+              <option value="adjoining">Ferrari</option>
+              <option value="adjacent">Porche</option>
+          </select>
+        </div>
+        <div class="elem-group">
+            <label for="room-selection"><h4 class="totooo"> Vehicule Type</h4></label>
+            <select id="room-selection" name="room_preference" required>
+                <option value="">select type</option>
+                <option value="connecting">4×4</option>
+                <option value="adjoining">Sport</option>
+                <option value="adjacent">Limusine</option>
+            </select>
+          </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message"><h4 class="jojo">Anything Else?</h4></label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button class="er" type="submit"><h4 class="bl">Book the car</h4></button>
+      </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
